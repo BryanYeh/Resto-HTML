@@ -1,0 +1,55 @@
+body{
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+
+/*
+* navbar
+*/
+.navbar-default{
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #3b3b3b3b;
+}
+
+.navbar-nav>li>a{
+    padding: 30px;
+}
+.navbar-brand{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*
+* jumbotron
+*/
+.jumbotron{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border-bottom: solid #f34949;
+}
+.jumbotron h1{
+    text-align: center;
+}
+.jumbotron p{
+    text-align: center;
+}
+
+/*
+* menu
+*/
+
+.item{
+    margin-bottom: 35px;
+}
+.food{
+    font-weight: bold;
+}
+.ingredients{
+    font-style: italic;
+    font-size: small;
+}
