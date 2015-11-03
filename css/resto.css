@@ -25,18 +25,40 @@ body{
 
 
 /*
-* jumbotron
+* jumbo header
 */
-.jumbotron{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    border-bottom: solid #f34949;
+.jumbo {
+    height: 600px;
+    margin-bottom: 60px;
+    position: relative;
 }
-.jumbotron h1{
+.jumbo-caption {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
     text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
-.jumbotron p{
-    text-align: center;
+.jumbo-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.jumbo .item {
+    height: 600px;
+    background-color: #777;
+    display: block;
+}
+.jumbo-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
 }
 
 /*
