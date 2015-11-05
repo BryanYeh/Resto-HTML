@@ -142,7 +142,7 @@
         </div>
         <div class="row">
             <div class="col-md-2 col-md-offset-5">
-                <button type="button" class="btn btn-default load-more">Load More</button>
+                <button type="button" class="btn btn-default load-more">Load More | <span class="glyphicon glyphicon-chevron-down"></span> </button>
             </div>
         </div>
     </div>
@@ -424,19 +424,67 @@
 </div>
 
 <div class="gallery">
-    <div class="container">
 
+    <div class="container gallery">
+        <h3>The Gallery</h3>
+        <div class="grid">
+            <div class="grid-item"><img src="images/g1.jpg"/></div>
+            <div class="grid-item"><img src="images/g2.jpg"/></div>
+            <div class="grid-item"><img src="images/g3.jpg"/></div>
+            <div class="grid-item"><img src="images/g4.jpg"/></div>
+            <div class="grid-item"><img src="images/g5.jpg"/></div>
+            <div class="grid-item"><img src="images/g2.jpg"/></div>
+            <div class="grid-item"><img src="images/g3.jpg"/></div>
+        </div>
     </div>
 </div>
 
 <footer>
-    
+    <div class="container">
+        <div class="col-md-3">
+            <ul>
+                <li class="top-text">New York Restaurant</li>
+                <li>3926 Anmore Road</li>
+                <li>New York, NY 10014</li>
+                <li>718-749-1714</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li class="top-text">France Restaurant</li>
+                <li>68, rue  de la Couronne</li>
+                <li>75002 PARIS</li>
+                <li class="top-text">02.94.23.69.56</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li>Resto</li>
+                <li>&copy; All Rights Reserved 2014.</li>
+                <li>Find  More at Pixelhint.com</li>
+            </ul>
+        </div>
+    </div>
 </footer>
 <script src="js/jquery1.11.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/masonry.pkgd.js"></script>
 <script>
     $('#myCarousel').carousel({
         interval:   4000
+    });
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 275
     });
 </script>
 </body>
